@@ -1,3 +1,8 @@
+header {
+    display: flex;
+}
+
+
 #info__img {
     width: 15%;
     height: auto;
