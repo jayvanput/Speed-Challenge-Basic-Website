@@ -13,12 +13,21 @@ async function getData(number) {
     const data = await response.json();
     document.getElementById('head__name').innerText = data.name;
     document.getElementById('info__img').src = data.sprites.front_default;
+    document.getElementById('info__img').alt = `sprite of ${data.name}`;
 }
 
-document.getElementById('test').addEventListener("click", function () {
-    let num = document.getElementById('test-input').value
+// document.getElementById('test').addEventListener("click", function () {
+//     let num = document.getElementById('test-input').value
+//     getData(num)
+//         .catch(error => {
+//             console.error(error)
+//         });
+// });
+
+document.getElementById('info__input').onchange = function () {
+    let num = this.value
     getData(num)
         .catch(error => {
             console.error(error)
         });
-});
+}

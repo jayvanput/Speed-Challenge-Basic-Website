@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pokemon Info</title>
-    <meta name="description" content="">
+    <meta name="description" content="Basic search engine for Pokemon.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,21 +14,21 @@
     <header>
         Pokemon Info | Place to get info about any Pokemon you want!
     </header>
-    <input id="test-input"></input>
-    <button id="test"> test</button>
     <div id="container">
         <div id="head">
-            <div id="head__left-arrow"></div>
+            <div id="head__left-arrow">&lt;&lt;</div>
             <div id="head__name"></div>
-            <div id="head__right-arrow"></div>
+            <div id="head__right-arrow">&gt;&gt;</div>
         </div>
         <div id="info">
-            <div id="info__randomize-btn">
-                <span>Random Pokemon</span>
-                <img id="info__img" />
+            <div id="info__search">
+                <label for="info__input">Search Pokemon</label>
+                <input id="info__input" type="number"></input>
             </div>
             <div id="info__pokemon">
-                <img />
+                <div id="info__img-box">
+                    <img id="info__img" alt="empty sprite box" />
+                </div>
                 <div id="info__metadata">
                     <div id="info__id"></div>
                     <div id="info__type1"></div>
