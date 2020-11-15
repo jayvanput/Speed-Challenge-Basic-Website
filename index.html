@@ -16,35 +16,38 @@
     </header>
     <div id="container">
         <div id="head">
-            <div id="head__left-arrow">&lt;&lt;</div>
-            <div id="head__name"></div>
-            <div id="head__right-arrow">&gt;&gt;</div>
+            <button id="head__left-arrow">&lt;&lt;</button>
+            <button id="head__right-arrow">&gt;&gt;</button>
         </div>
         <div id="info">
             <div id="info__search">
-                <label for="info__input">Search Pokemon</label>
-                <input id="info__input" type="number"></input>
+                <label for="info__input-name">Search Pokemon by Name</label>
+                <input id="info__input-name" type="text"></input>
+                <label for="info__input-id">Search Pokemon by ID</label>
+                <input id="info__input-id" type="number" min="0" max="893"></input>
             </div>
             <div id="info__pokemon">
                 <div id="info__img-box">
                     <img id="info__img" alt="empty sprite box" />
                 </div>
                 <div id="info__metadata">
-                    <div id="info__id"></div>
+                    <div id="info__name"></div>
                     <div id="info__type1"></div>
                     <div id="info__type2"></div>
                 </div>
             </div>
         </div>
         <div id="stats">
-            <ul id="stats__captions">
-                <li id="stats__hp"></li>
-                <li id="stats__attack"></li>
-                <li id="stats__defense"></li>
-                <li id="stats__special-attack"></li>
-                <li id="stats__special-defense"></li>
-                <li id="stats__speed"></li>
-            </ul>
+            <div id="stats__words">
+                <ul id="stats__captions">
+                    <li class="stats" id="stats__hp">HP</li>
+                    <li class="stats" id="stats__attack">Attack</li>
+                    <li class="stats" id="stats__defense">Defense</li>
+                    <li class="stats" id="stats__special-attack">Special Attack</li>
+                    <li class="stats" id="stats__special-defense">Special Defense</li>
+                    <li class="stats" id="stats__speed">Speed</li>
+                </ul>
+            </div>
             <div id="stats_bars"></div>
         </div>
 
