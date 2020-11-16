@@ -64,10 +64,38 @@ header {
     display: none;
 }
 
-#stats__words {
-    width: 25%;
+#stats {
+    display: flex;
+    justify-content: center;
 }
 
-.stats {
+.stats_text {
     text-align: right;
+}
+
+.stats_bar {
+    width: 255px;
+}
+#stats-bar-hp {
+    background-color: red;
+}
+
+#stats-bar-attack {
+    background-color: blue;
+}
+
+#stats-bar-defense {
+    background-color: green;
+}
+
+#stats-bar-spa {
+    background-color: pink;
+}
+
+#stats-bar-spd {
+    background-color: orange;
+}
+
+#stats-bar-speed {
+    background-color: yellow;
 }
